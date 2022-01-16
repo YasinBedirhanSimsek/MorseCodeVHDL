@@ -107,8 +107,7 @@ Slice Utilization Ratio Delta      : 5
 Compiling vhdl file "D:/Ders/FPGA/Workspace/FinalProject/ButtonController.vhd" in Library work.
 Architecture behavioral of Entity buttoncontroller is up to date.
 Compiling vhdl file "D:/Ders/FPGA/Workspace/FinalProject/LCD.vhd" in Library work.
-Entity <lcd> compiled.
-Entity <lcd> (Architecture <behavior>) compiled.
+Architecture behavior of Entity lcd is up to date.
 Compiling vhdl file "D:/Ders/FPGA/Workspace/FinalProject/MorseLookUpTable.vhd" in Library work.
 Architecture behavioral of Entity morselookuptable is up to date.
 Compiling vhdl file "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.vhd" in Library work.
@@ -163,6 +162,7 @@ Unit <ButtonController> synthesized.
 
 Synthesizing Unit <lcd>.
     Related source file is "D:/Ders/FPGA/Workspace/FinalProject/LCD.vhd".
+INFO:Xst:1799 - State set_addr_40 is never reached in FSM <cur_state>.
     Found finite state machine <FSM_0> for signal <init_state>.
     -----------------------------------------------------------------------
     | States             | 11                                             |
@@ -180,9 +180,9 @@ Synthesizing Unit <lcd>.
     Found finite state machine <FSM_1> for signal <cur_state>.
     -----------------------------------------------------------------------
     | States             | 13                                             |
-    | Transitions        | 28                                             |
-    | Inputs             | 6                                              |
-    | Outputs            | 16                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 15                                             |
     | Clock              | clk                       (rising_edge)        |
     | Reset              | reset                     (positive)           |
     | Reset type         | asynchronous                                   |
@@ -205,26 +205,33 @@ Synthesizing Unit <lcd>.
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit updown counter for signal <bottom_line_cursor>.
+    Found 16x8-bit ROM for signal <line_switch_cmd$mux0004>.
+    Found 16x8-bit ROM for signal <line_switch_cmd$mux0005>.
+    Found 32-bit register for signal <bottom_line_cursor>.
+    Found 32-bit addsub for signal <bottom_line_cursor$share0000> created at line 211.
+    Found 32-bit comparator greater for signal <cur_state$cmp_gt0000> created at line 171.
+    Found 32-bit comparator greater for signal <cur_state$cmp_gt0001> created at line 166.
     Found 1-bit register for signal <current_line>.
     Found 20-bit register for signal <i>.
-    Found 20-bit adder for signal <i$share0000> created at line 364.
+    Found 20-bit adder for signal <i$share0000> created at line 385.
     Found 11-bit register for signal <i2>.
-    Found 11-bit adder for signal <i2$share0000> created at line 279.
+    Found 11-bit adder for signal <i2$share0000> created at line 300.
     Found 17-bit register for signal <i3>.
-    Found 17-bit adder for signal <i3$addsub0000> created at line 144.
+    Found 17-bit adder for signal <i3$addsub0000> created at line 145.
     Found 1-bit register for signal <init_done>.
     Found 1-bit register for signal <LCD_E0>.
     Found 1-bit register for signal <LCD_E1>.
     Found 8-bit register for signal <line_switch_cmd>.
     Found 4-bit register for signal <SF_D0>.
     Found 4-bit register for signal <SF_D1>.
-    Found 4-bit updown counter for signal <top_line_cursor>.
+    Found 32-bit register for signal <top_line_cursor>.
+    Found 32-bit addsub for signal <top_line_cursor$share0000> created at line 211.
     Summary:
 	inferred   3 Finite State Machine(s).
-	inferred   2 Counter(s).
-	inferred  68 D-type flip-flop(s).
-	inferred   3 Adder/Subtractor(s).
+	inferred   2 ROM(s).
+	inferred 132 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
 Unit <lcd> synthesized.
 
 
@@ -286,25 +293,28 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 8
  11-bit adder                                          : 1
  17-bit adder                                          : 1
  2-bit adder                                           : 1
  20-bit adder                                          : 1
  32-bit adder                                          : 2
-# Counters                                             : 3
+ 32-bit addsub                                         : 2
+# Counters                                             : 1
  32-bit up counter                                     : 1
- 4-bit updown counter                                  : 2
-# Registers                                            : 47
+# Registers                                            : 49
  1-bit register                                        : 34
  11-bit register                                       : 1
  17-bit register                                       : 1
  2-bit register                                        : 1
  20-bit register                                       : 1
- 32-bit register                                       : 6
+ 32-bit register                                       : 8
  4-bit register                                        : 2
  8-bit register                                        : 1
-# Comparators                                          : 5
+# Comparators                                          : 7
+ 32-bit comparator greater                             : 2
  32-bit comparator less                                : 5
 # Multiplexers                                         : 10
  1-bit 4-to-1 multiplexer                              : 10
@@ -356,6 +366,7 @@ Optimizing FSM <LCD_CONTROLLER/cur_state/FSM> on signal <cur_state[1:13]> with o
  clr_display              | 0000000010000
  pause                    | 0000000100000
  set_addr                 | 0000001000000
+ set_addr_40              | unreached
  write_morse_input        | 0000100000000
  line_switch              | 0001000000000
  cursor_shift_left_first  | 0100000000000
@@ -380,28 +391,29 @@ Optimizing FSM <LCD_CONTROLLER/init_state/FSM> on signal <init_state[1:11]> with
  eight     | 01000000000
  done      | 10000000000
 --------------------------
-INFO:Xst:2261 - The FF/Latch <line_switch_cmd_4> in Unit <LCD_CONTROLLER> is equivalent to the following FF/Latch, which will be removed : <line_switch_cmd_5> 
 WARNING:Xst:1293 - FF/Latch <SF_D1_2> has a constant value of 0 in block <LCD_CONTROLLER>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <SF_D1_3> has a constant value of 0 in block <LCD_CONTROLLER>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <line_switch_cmd_4> has a constant value of 0 in block <LCD_CONTROLLER>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
 # FSMs                                                 : 4
-# Adders/Subtractors                                   : 6
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 2
+# Adders/Subtractors                                   : 8
  11-bit adder                                          : 1
  17-bit adder                                          : 1
  2-bit adder                                           : 1
  20-bit adder                                          : 1
  32-bit adder                                          : 2
-# Counters                                             : 3
+ 32-bit addsub                                         : 2
+# Counters                                             : 1
  32-bit up counter                                     : 1
- 4-bit updown counter                                  : 2
-# Registers                                            : 292
- Flip-Flops                                            : 292
-# Comparators                                          : 5
+# Registers                                            : 356
+ Flip-Flops                                            : 356
+# Comparators                                          : 7
+ 32-bit comparator greater                             : 2
  32-bit comparator less                                : 5
 # Multiplexers                                         : 10
  1-bit 4-to-1 multiplexer                              : 10
@@ -415,20 +427,20 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <SF_D1_2> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <SF_D1_3> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <line_switch_cmd_4> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <line_switch_cmd_4> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <line_switch_cmd_5> has a constant value of 0 in block <lcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch line_switch_cmd_7 hinder the constant cleaning in the block lcd.
+   You should achieve better results by setting this init to 1.
 
 Optimizing unit <MorseDecoder> ...
 
 Optimizing unit <ButtonController> ...
 
 Optimizing unit <lcd> ...
-WARNING:Xst:1426 - The value init of the FF/Latch line_switch_cmd_7 hinder the constant cleaning in the block lcd.
-   You should achieve better results by setting this init to 1.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block MorseDecoder, actual ratio is 8.
+Found area constraint ratio of 100 (+ 5) on block MorseDecoder, actual ratio is 10.
 WARNING:Xst:1426 - The value init of the FF/Latch LCD_CONTROLLER/cur_state_FSM_FFd13 hinder the constant cleaning in the block MorseDecoder.
    You should achieve better results by setting this init to 0.
 
@@ -438,8 +450,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 362
- Flip-Flops                                            : 362
+# Registers                                            : 418
+ Flip-Flops                                            : 418
 
 =========================================================================
 
@@ -468,26 +480,26 @@ Design Statistics
 # IOs                              : 22
 
 Cell Usage :
-# BELS                             : 1103
+# BELS                             : 1422
 #      GND                         : 1
-#      INV                         : 21
+#      INV                         : 24
 #      LUT1                        : 145
-#      LUT2                        : 42
+#      LUT2                        : 109
 #      LUT2_D                      : 1
-#      LUT3                        : 52
-#      LUT3_D                      : 10
-#      LUT3_L                      : 3
-#      LUT4                        : 420
-#      LUT4_D                      : 13
-#      LUT4_L                      : 1
-#      MUXCY                       : 234
-#      MUXF5                       : 15
+#      LUT3                        : 47
+#      LUT3_D                      : 12
+#      LUT3_L                      : 5
+#      LUT4                        : 512
+#      LUT4_D                      : 14
+#      LUT4_L                      : 2
+#      MUXCY                       : 328
+#      MUXF5                       : 13
 #      VCC                         : 1
-#      XORCY                       : 144
-# FlipFlops/Latches                : 362
+#      XORCY                       : 208
+# FlipFlops/Latches                : 418
 #      FD                          : 213
-#      FDC                         : 23
-#      FDCE                        : 15
+#      FDC                         : 87
+#      FDCE                        : 7
 #      FDE                         : 71
 #      FDP                         : 2
 #      FDPE                        : 1
@@ -506,9 +518,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      379  out of   4656     8%  
- Number of Slice Flip Flops:            362  out of   9312     3%  
- Number of 4 input LUTs:                708  out of   9312     7%  
+ Number of Slices:                      465  out of   4656     9%  
+ Number of Slice Flip Flops:            418  out of   9312     4%  
+ Number of 4 input LUTs:                871  out of   9312     9%  
  Number of IOs:                          22
  Number of bonded IOBs:                  22  out of    232     9%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -534,7 +546,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 171   |
+CLK                                | BUFGP                  | 227   |
 clk_10ms_flag1                     | BUFG                   | 191   |
 -----------------------------------+------------------------+-------+
 
@@ -543,7 +555,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-BTN_RESET                          | IBUF                   | 41    |
+BTN_RESET                          | IBUF                   | 97    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -551,8 +563,8 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 8.678ns (Maximum Frequency: 115.234MHz)
-   Minimum input arrival time before clock: 5.013ns
-   Maximum output required time after clock: 7.151ns
+   Minimum input arrival time before clock: 5.031ns
+   Maximum output required time after clock: 7.158ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -562,7 +574,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 8.678ns (frequency: 115.234MHz)
-  Total number of paths / destination ports: 7028 / 223
+  Total number of paths / destination ports: 14638 / 271
 -------------------------------------------------------------------------
 Delay:               8.678ns (Levels of Logic = 6)
   Source:            LCD_CONTROLLER/i_18 (FF)
@@ -575,11 +587,11 @@ Delay:               8.678ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              3   0.591   0.706  LCD_CONTROLLER/i_18 (LCD_CONTROLLER/i_18)
-     LUT4:I0->O            2   0.704   0.482  LCD_CONTROLLER/init_state_cmp_eq0000112 (LCD_CONTROLLER/N19)
-     LUT4_D:I2->O          2   0.704   0.451  LCD_CONTROLLER/init_state_cmp_eq00011 (LCD_CONTROLLER/N8)
+     LUT4:I0->O            2   0.704   0.482  LCD_CONTROLLER/init_state_cmp_eq0000112 (LCD_CONTROLLER/N26)
+     LUT4_D:I2->O          2   0.704   0.451  LCD_CONTROLLER/init_state_cmp_eq00011 (LCD_CONTROLLER/N14)
      LUT4:I3->O            3   0.704   0.566  LCD_CONTROLLER/init_state_cmp_eq0003 (LCD_CONTROLLER/init_state_cmp_eq0003)
      LUT4:I2->O            2   0.704   0.526  LCD_CONTROLLER/i_mux0001<0>145 (LCD_CONTROLLER/i_mux0001<0>145)
-     LUT3_D:I1->O          9   0.704   0.824  LCD_CONTROLLER/i_mux0001<0>147 (LCD_CONTROLLER/N1)
+     LUT3_D:I1->O          9   0.704   0.824  LCD_CONTROLLER/i_mux0001<0>147 (LCD_CONTROLLER/N3)
      LUT4:I3->O            1   0.704   0.000  LCD_CONTROLLER/i_mux0001<17>1 (LCD_CONTROLLER/i_mux0001<17>)
      FDE:D                     0.308          LCD_CONTROLLER/i_2
     ----------------------------------------
@@ -604,8 +616,8 @@ Delay:               6.724ns (Levels of Logic = 3)
      FDS:C->Q             42   0.591   1.440  current_state_FSM_FFd3 (current_state_FSM_FFd3)
      LUT3_D:I0->O          8   0.704   0.932  morse_char_0_or000011 (current_state_cmp_eq0006)
      LUT4_D:I0->O         31   0.704   1.341  morse_char_3_mux0000<0>11 (N4)
-     LUT4:I1->O            1   0.704   0.000  morse_char_3_mux0000<8>1 (morse_char_3_mux0000<8>)
-     FD:D                      0.308          morse_char_3_23
+     LUT4:I1->O            1   0.704   0.000  morse_char_3_mux0000<9>1 (morse_char_3_mux0000<9>)
+     FD:D                      0.308          morse_char_3_22
     ----------------------------------------
     Total                      6.724ns (3.011ns logic, 3.713ns route)
                                        (44.8% logic, 55.2% route)
@@ -614,7 +626,7 @@ Delay:               6.724ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_10ms_flag1'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              3.575ns (Levels of Logic = 2)
+Offset:              3.593ns (Levels of Logic = 2)
   Source:            BTN_RESET (PAD)
   Destination:       BTN_RESET_CONTROLLER/BTN_PRESSED (FF)
   Destination Clock: clk_10ms_flag1 rising
@@ -623,18 +635,18 @@ Offset:              3.575ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            45   1.218   1.345  BTN_RESET_IBUF (BTN_RESET_IBUF)
+     IBUF:I->O           101   1.218   1.363  BTN_RESET_IBUF (BTN_RESET_IBUF)
      LUT3:I1->O            1   0.704   0.000  BTN_RESET_CONTROLLER/Mmux_BTN_PRESSED_mux000121 (BTN_RESET_CONTROLLER/BTN_PRESSED_mux0001)
      FD:D                      0.308          BTN_RESET_CONTROLLER/BTN_PRESSED
     ----------------------------------------
-    Total                      3.575ns (2.230ns logic, 1.345ns route)
-                                       (62.4% logic, 37.6% route)
+    Total                      3.593ns (2.230ns logic, 1.363ns route)
+                                       (62.1% logic, 37.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
   Total number of paths / destination ports: 62 / 62
 -------------------------------------------------------------------------
-Offset:              5.013ns (Levels of Logic = 2)
+Offset:              5.031ns (Levels of Logic = 2)
   Source:            BTN_RESET (PAD)
   Destination:       LCD_CONTROLLER/LCD_E0 (FF)
   Destination Clock: CLK rising
@@ -643,18 +655,18 @@ Offset:              5.013ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            45   1.218   1.266  BTN_RESET_IBUF (BTN_RESET_IBUF)
+     IBUF:I->O           101   1.218   1.284  BTN_RESET_IBUF (BTN_RESET_IBUF)
      INV:I->O             56   0.704   1.270  LCD_CONTROLLER/reset_inv1_INV_0 (LCD_CONTROLLER/reset_inv)
      FDE:CE                    0.555          LCD_CONTROLLER/SF_D0_0
     ----------------------------------------
-    Total                      5.013ns (2.477ns logic, 2.536ns route)
-                                       (49.4% logic, 50.6% route)
+    Total                      5.031ns (2.477ns logic, 2.554ns route)
+                                       (49.2% logic, 50.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 21 / 6
 -------------------------------------------------------------------------
-Offset:              7.151ns (Levels of Logic = 3)
+Offset:              7.158ns (Levels of Logic = 3)
   Source:            LCD_CONTROLLER/cur_state_FSM_FFd4 (FF)
   Destination:       LCD_RS (PAD)
   Source Clock:      CLK rising
@@ -663,13 +675,13 @@ Offset:              7.151ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             10   0.591   0.961  LCD_CONTROLLER/cur_state_FSM_FFd4 (LCD_CONTROLLER/cur_state_FSM_FFd4)
-     LUT4:I1->O            1   0.704   0.499  LCD_CONTROLLER/cur_state_FSM_Out1525 (LCD_CONTROLLER/cur_state_FSM_Out1525)
-     LUT2:I1->O            1   0.704   0.420  LCD_CONTROLLER/cur_state_FSM_Out1526 (LCD_RS_OBUF)
+     FDC:C->Q             11   0.591   0.968  LCD_CONTROLLER/cur_state_FSM_FFd4 (LCD_CONTROLLER/cur_state_FSM_FFd4)
+     LUT4:I2->O            1   0.704   0.499  LCD_CONTROLLER/LCD_RS25 (LCD_CONTROLLER/LCD_RS25)
+     LUT2:I1->O            1   0.704   0.420  LCD_CONTROLLER/LCD_RS26 (LCD_RS_OBUF)
      OBUF:I->O                 3.272          LCD_RS_OBUF (LCD_RS)
     ----------------------------------------
-    Total                      7.151ns (5.271ns logic, 1.880ns route)
-                                       (73.7% logic, 26.3% route)
+    Total                      7.158ns (5.271ns logic, 1.887ns route)
+                                       (73.6% logic, 26.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_10ms_flag1'
@@ -693,14 +705,14 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.00 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.79 secs
  
 --> 
 
-Total memory usage is 4530596 kilobytes
+Total memory usage is 4530572 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

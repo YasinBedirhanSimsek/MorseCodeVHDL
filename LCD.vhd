@@ -43,11 +43,11 @@ architecture behavior of lcd is
 	signal mux : bit;
 	
 	signal line_switch_cmd : bit_vector(7 downto 0);
-	signal top_line_cursor    : integer range 0 to 15 := 0;
-	signal bottom_line_cursor : integer range 0 to 15 := 0;
+	signal top_line_cursor    : integer := 0;
+	signal bottom_line_cursor : integer := 0;
 	signal current_line : bit := '0';
 
-	type display_state is (init, function_set, entry_set, set_display, clr_display, pause, set_addr, write_morse_input, line_switch, cursor_shift_left_first, cursor_shift_left_second, whitespace, done);  
+	type display_state is (init, function_set, entry_set, set_display, clr_display, pause, set_addr, set_addr_40, write_morse_input, line_switch, cursor_shift_left_first, cursor_shift_left_second, whitespace, done);  
 	
 	signal cur_state : display_state := init;
 
@@ -71,7 +71,7 @@ begin
 												  '0' when others;
 												  
 --register select
-	with cur_state select LCD_RS <= '0' when function_set|entry_set|set_display|clr_display|set_addr|line_switch|cursor_shift_left_first|cursor_shift_left_second,
+	with cur_state select LCD_RS <= '0' when function_set|entry_set|set_display|clr_display|set_addr|set_addr_40|line_switch|cursor_shift_left_first|cursor_shift_left_second,
 											  '1' when others;
 											  								  
 --what byte to transmit to lcd
@@ -82,6 +82,7 @@ begin
 						"00001100" when set_display,
 						"00000001" when clr_display,
 						"10000000" when set_addr,
+						"11000000" when set_addr_40,
 					   MORSE_INPUT when write_morse_input,
 						line_switch_cmd when line_switch,
 						"00010000" when cursor_shift_left_first | cursor_shift_left_second,
@@ -150,10 +151,28 @@ begin
 					else
 					cur_state <= set_addr;
 					end if;	
+					
+				when set_addr_40 =>
+					if(i2 = 2000) then
+					cur_state <= done;
+					else
+					cur_state <= set_addr_40;
+					end if;
 							
 				when write_morse_input =>
 					if(i2 = 2000) then
 						cur_state <= done;
+												
+						if(top_line_cursor > 15) then
+							top_line_cursor <= 0;
+							cur_state <= set_addr;
+						end if;
+											
+						if(bottom_line_cursor > 15) then
+							bottom_line_cursor <= 0;
+							cur_state <= set_addr;
+						end if;
+				
 					else
 						cur_state <= write_morse_input;
 					end if;	
@@ -222,6 +241,7 @@ begin
 								when 13 => line_switch_cmd <= "11001101";
 								when 14 => line_switch_cmd <= "11001110";
 								when 15 => line_switch_cmd <= "11001111";
+								when others => line_switch_cmd <= "11000000";
 							end case;
 						else
 							current_line <= '0';
@@ -242,6 +262,7 @@ begin
 								when 13 => line_switch_cmd <= "10001101";
 								when 14 => line_switch_cmd <= "10001110";
 								when 15 => line_switch_cmd <= "10001111";
+								when others => line_switch_cmd <= "10000000";
 							end case;
 						end if;	
 						
