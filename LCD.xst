@@ -1,0 +1,5 @@
+set -tmpdir "D:/Ders/FPGA/Workspace/FinalProject/xst/projnav.tmp"
+set -xsthdpdir "D:/Ders/FPGA/Workspace/FinalProject/xst"
+elaborate
+-ifn lcd.prj
+-ifmt mixed

@@ -1,0 +1,4 @@
+vhdl work "D:\Ders\FPGA\Workspace\FinalProject\MorseLookUpTable.vhd"
+vhdl work "D:\Ders\FPGA\Workspace\FinalProject\LCD.vhd"
+vhdl work "D:\Ders\FPGA\Workspace\FinalProject\ButtonController.vhd"
+vhdl work "D:\Ders\FPGA\Workspace\FinalProject\MorseDecoder.vhd"

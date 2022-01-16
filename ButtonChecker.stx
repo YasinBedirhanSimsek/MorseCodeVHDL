@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Ders/FPGA/Workspace/FinalProject/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to D:/Ders/FPGA/Workspace/FinalProject/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" in Library work.
+Entity <ButtonChecker> compiled.
+ERROR:HDLParsers:3312 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 44. Undefined symbol 'clk_10ms_flag'.
+ERROR:HDLParsers:1209 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 44. clk_10ms_flag: Undefined symbol (last report in this block)
+ERROR:HDLParsers:808 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 47. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 48. Undefined symbol 'push_prev'.
+ERROR:HDLParsers:808 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 49. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 50. Undefined symbol 'led_stat'.
+ERROR:HDLParsers:1209 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 50. led_stat: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 52. push_prev: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 52. Undefined symbol 'BTN_PUSH'.
+ERROR:HDLParsers:1209 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 52. BTN_PUSH: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd" Line 44. No sensitivity list and no wait in the process
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+
+Total memory usage is 4468980 kilobytes
+
+Number of errors   :   10 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

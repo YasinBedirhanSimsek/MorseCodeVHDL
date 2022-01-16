@@ -1,0 +1,4 @@
+vhdl work "MorseLookUpTable.vhd"
+vhdl work "LCD.vhd"
+vhdl work "ButtonController.vhd"
+vhdl work "MorseDecoder.vhd"

@@ -1,0 +1,10 @@
+EN lcd NULL D:/Ders/FPGA/Workspace/FinalProject/LCD.vhd sub00/vhpl05 1642301745
+AR lcd behavioral D:/Ders/FPGA/Workspace/FinalProject/LCD.vhd sub00/vhpl06 1642259719
+EN buttonchecker NULL D:/Ders/FPGA/Workspace/FinalProject/ButtonChecker.vhd sub00/vhpl02 1642189341
+EN morsedecoder NULL D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.vhd sub00/vhpl00 1642301749
+AR lcd behavior D:/Ders/FPGA/Workspace/FinalProject/LCD.vhd sub00/vhpl07 1642301746
+AR morselookuptable behavioral D:/Ders/FPGA/Workspace/FinalProject/MorseLookUpTable.vhd sub00/vhpl09 1642301748
+AR buttoncontroller behavioral D:/Ders/FPGA/Workspace/FinalProject/ButtonController.vhd sub00/vhpl04 1642301744
+EN morselookuptable NULL D:/Ders/FPGA/Workspace/FinalProject/MorseLookUpTable.vhd sub00/vhpl08 1642301747
+EN buttoncontroller NULL D:/Ders/FPGA/Workspace/FinalProject/ButtonController.vhd sub00/vhpl03 1642301743
+AR morsedecoder behavioral D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.vhd sub00/vhpl01 1642301750

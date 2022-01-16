@@ -1,0 +1,3 @@
+vhdtdtfi -prj FinalProject -o D:/Ders/FPGA/Workspace/FinalProject/lcd.vhi -module lcd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work LCD.vhd 
+vhdtdtfi -prj FinalProject -o D:/Ders/FPGA/Workspace/FinalProject/lcd.vhi -module lcd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work LCD.vhd 
+vhdtdtfi -prj FinalProject -o D:/Ders/FPGA/Workspace/FinalProject/lcd.vhi -module lcd -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work LCD.vhd 

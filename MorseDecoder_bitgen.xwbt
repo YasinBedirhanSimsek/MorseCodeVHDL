@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Ders\FPGA\Workspace\FinalProject\MorseDecoder.ncd
+OUTFILE=D:\Ders\FPGA\Workspace\FinalProject\MorseDecoder.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\Ders\FPGA\Workspace\FinalProject
+LICENSE=WebPack
+USER_INFO=212243519_0_0_533

@@ -1,0 +1,581 @@
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+netgen -intstyle ise -ar Structure -tm MorseDecoder -w -dir netgen/synthesis -ofmt vhdl -sim MorseDecoder.ngc MorseDecoder_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+xst -intstyle ise -ifn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.xst" -ofn "D:/Ders/FPGA/Workspace/FinalProject/MorseDecoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Const.ucf -p xc3s500e-fg320-4 MorseDecoder.ngc MorseDecoder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MorseDecoder_map.ncd MorseDecoder.ngd MorseDecoder.pcf 
+par -w -intstyle ise -ol high -t 1 MorseDecoder_map.ncd MorseDecoder.ncd MorseDecoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MorseDecoder.twx MorseDecoder.ncd -o MorseDecoder.twr MorseDecoder.pcf -ucf Const.ucf 
+bitgen -intstyle ise -f MorseDecoder.ut MorseDecoder.ncd 
