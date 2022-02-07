@@ -231,8 +231,8 @@ STATE_MACHINE: PROCESS(clk_10ms_flag) begin
 					elsif morse_char(2) < 100 then
 						LED4 <= '1';
 						LED5 <= '0';
-						morse_encoded(4) <= '0';
-						morse_encoded(5) <= '1';						
+						morse_encoded(4) <= '1';
+						morse_encoded(5) <= '0';						
 					else
 						LED4 <= '1';
 						LED5 <= '1';
@@ -248,8 +248,8 @@ STATE_MACHINE: PROCESS(clk_10ms_flag) begin
 					elsif morse_char(3) < 100 then
 						LED6 <= '1';
 						LED7 <= '0';
-						morse_encoded(6) <= '0';
-						morse_encoded(7) <= '1';
+						morse_encoded(6) <= '1';
+						morse_encoded(7) <= '0';
 					else
 						LED6 <= '1';
 						LED7 <= '1';
